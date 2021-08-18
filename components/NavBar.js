@@ -1,57 +1,48 @@
-/* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import {
-	ChartBarIcon,
-	CursorClickIcon,
-	DocumentReportIcon,
+	ChartPieIcon,
 	MenuIcon,
-	RefreshIcon,
-	ShieldCheckIcon,
-	ViewGridIcon,
 	XIcon,
+	FireIcon,
 } from '@heroicons/react/outline';
-import { ChevronDownIcon } from '@heroicons/react/solid';
 
 const solutions = [
 	{
-		name: 'Analytics',
-		description:
-			'Get a better understanding of where your traffic is coming from.',
-		href: '#',
-		icon: ChartBarIcon,
+		name: 'Blast 825° Brewery | Orcutt',
+		description: `Life's too short, have a blast!`,
+		href: '/locations/blast-orcutt',
+		icon: FireIcon,
 	},
 	{
-		name: 'Engagement',
-		description: 'Speak directly to your customers in a more meaningful way.',
-		href: '#',
-		icon: CursorClickIcon,
+		name: `Me N Ed's Pizzaria & Crafthouse | Nipomo`,
+		description: 'Two fun guys, one great pizza!',
+		href: '/locations/mne-nipomo',
+		icon: ChartPieIcon,
 	},
 	{
-		name: 'Security',
-		description: "Your customers' data will be safe and secure.",
-		href: '#',
-		icon: ShieldCheckIcon,
+		name: `Me N Ed's Pizzaria & Crafthouse | Pismo`,
+		description: 'Two fun guys, one great pizza!',
+		href: '/locations/mne-pismo',
+		icon: ChartPieIcon,
 	},
 	{
-		name: 'Integrations',
-		description: "Connect with third-party tools that you're already using.",
-		href: '#',
-		icon: ViewGridIcon,
+		name: 'Blast 825° Brewery | Pismo',
+		description: `Life's too short, have a blast!`,
+		href: '/locations/blast-pismo',
+		icon: FireIcon,
 	},
 	{
-		name: 'Automations',
-		description:
-			'Build strategic funnels that will drive your customers to convert',
-		href: '#',
-		icon: RefreshIcon,
+		name: `Me N Ed's Pizzaria & Crafthouse | Santa Maria`,
+		description: 'Two fun guys, one great pizza!',
+		href: '/locations/mne-santa-maria',
+		icon: ChartPieIcon,
 	},
 	{
-		name: 'Reports',
-		description:
-			'Get detailed reports that will help you make more informed decisions ',
-		href: '#',
-		icon: DocumentReportIcon,
+		name: 'Blast 825° Brewery | Arroyo Grande',
+		description: `Life's too short, have a blast!`,
+		href: '/locations/blast-arroyo-grande',
+		icon: FireIcon,
 	},
 ];
 const resources = [
@@ -89,7 +80,7 @@ export default function NavBar() {
 		<Popover className='relative bg-white'>
 			<div className='flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10'>
 				<div className='flex justify-start lg:w-0 lg:flex-1'>
-					<a href='#'>
+					<a href='/'>
 						<span className='sr-only'>Workflow</span>
 						<img
 							className='h-8 w-auto sm:h-10'
@@ -126,18 +117,6 @@ export default function NavBar() {
 						Contact
 					</a>
 				</Popover.Group>
-				<div className='hidden md:flex items-center justify-end md:flex-1 lg:w-0'>
-					<a
-						href='#'
-						className='whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900'>
-						Sign in
-					</a>
-					<a
-						href='#'
-						className='ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700'>
-						Sign up
-					</a>
-				</div>
 			</div>
 
 			<Transition
@@ -184,48 +163,6 @@ export default function NavBar() {
 										</a>
 									))}
 								</nav>
-							</div>
-						</div>
-						<div className='py-6 px-5'>
-							<div className='grid grid-cols-2 gap-4'>
-								<a
-									href='#'
-									className='text-base font-medium text-gray-900 hover:text-gray-700'>
-									Pricing
-								</a>
-
-								<a
-									href='#'
-									className='text-base font-medium text-gray-900 hover:text-gray-700'>
-									Docs
-								</a>
-
-								<a
-									href='#'
-									className='text-base font-medium text-gray-900 hover:text-gray-700'>
-									Enterprise
-								</a>
-								{resources.map(item => (
-									<a
-										key={resources.name}
-										href={item.href}
-										className='text-base font-medium text-gray-900 hover:text-gray-700'>
-										{item.name}
-									</a>
-								))}
-							</div>
-							<div className='mt-6'>
-								<a
-									href='#'
-									className='w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700'>
-									Sign up
-								</a>
-								<p className='mt-6 text-center text-base font-medium text-gray-500'>
-									Existing customer?{' '}
-									<a href='#' className='text-indigo-600 hover:text-indigo-500'>
-										Sign in
-									</a>
-								</p>
 							</div>
 						</div>
 					</div>
