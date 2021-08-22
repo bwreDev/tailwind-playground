@@ -162,11 +162,11 @@ export default function Hero() {
 					<div className='text-center'>
 						<h1 className='text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl'>
 							<span className='block xl:inline'>Central Coast</span>{' '}
-							<span className='block text-indigo-600 xl:inline'>
+							<span className='block text-red-800 xl:inline'>
 								Restaurant Group
 							</span>
 						</h1>
-						<p className='mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl'>
+						<p className='mt-3 max-w-md mx-auto text-base text-gray-600 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl'>
 							Harnessing 50+ years of heritage and the highest quality local
 							ingredients, we are commited to bringing you the best possible
 							dining experience at one of our growing list of impressive
@@ -176,14 +176,14 @@ export default function Hero() {
 							<div className='rounded-md shadow'>
 								<a
 									href='/locations'
-									className='w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10'>
+									className='w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-700 hover:bg-red-800 md:py-4 md:text-lg md:px-10'>
 									Visit Our Locations
 								</a>
 							</div>
 							<div className='mt-3 rounded-md shadow sm:mt-0 sm:ml-3'>
 								<a
 									href='/contact'
-									className='w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10'>
+									className='w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-lime-800 bg-white hover:bg-gray-100 md:py-4 md:text-lg md:px-10'>
 									Contact Us
 								</a>
 							</div>
