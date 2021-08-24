@@ -21,7 +21,7 @@ export default function (req, res) {
 		to: contactEmail,
 		subject: req.body.subject,
 		text: req.body.message + ' | Sent from: ' + req.body.email + req.body.phone,
-		html: `<div>${req.body.message}</div><p>Sent from: ${req.body.email} | ${req.body.phone}`,
+		html: `<div>${req.body.message}</div><p>Sent from: ${req.body.firstName} ${req.body.lastName} | ${req.body.email} | ${req.body.phone}</p>`,
 	};
 
 	transporter.sendMail(mailData, function (err, info) {
