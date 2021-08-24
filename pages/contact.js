@@ -145,9 +145,8 @@ export default function Contact() {
 			},
 			body: JSON.stringify(data),
 		}).then(res => {
-			console.log('Res recieved');
+			console.log('Res recieved', res);
 			if (res.status === 200) {
-				console.log('Success');
 				setSubmitted(true);
 				setFirstName('');
 				setLastName('');

@@ -21,13 +21,17 @@ export default function (req, res) {
 		to: contactEmail,
 		subject: req.body.subject,
 		text: req.body.message + ' | Sent from: ' + req.body.email + req.body.phone,
-		html: `<div>${req.body.message}</div><p>Sent from: ${req.body.email} + '|' ${req.body.phone}`,
+		html: `<div>${req.body.message}</div><p>Sent from: ${req.body.email} | ${req.body.phone}`,
 	};
 
 	transporter.sendMail(mailData, function (err, info) {
-		if (err) console.log(err);
-		else console.log(info);
+		if (err) {
+			console.log(err);
+			res.send('error' + JSON.stringify(err));
+		} else {
+			console.log(info);
+			res.send('success');
+		}
 	});
-
 	res.status(200);
 }
