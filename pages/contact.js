@@ -492,7 +492,6 @@ export default function Contact() {
 													value={message}
 													className='py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-red-800 focus:border-red-800 border border-warm-gray-300 rounded-md'
 													aria-describedby='message-max'
-													defaultValue={''}
 												/>
 											</div>
 										</div>

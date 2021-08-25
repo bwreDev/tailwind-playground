@@ -81,15 +81,15 @@ export default function Hero() {
 							<div className='flex items-center flex-1 md:absolute md:inset-y-0 md:left-0'>
 								<div className='flex items-center justify-between w-full md:w-auto'>
 									<a href='/'>
-										<span className='sr-only'>Workflow</span>
+										<span className='sr-only'>CCRG</span>
 										<img
-											className='h-8 w-auto sm:h-10'
-											src='https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg'
-											alt=''
+											className='h-10 w-auto sm:h-12'
+											src='/blast825.svg'
+											alt='CCRG Logo'
 										/>
 									</a>
 									<div className='-mr-2 flex items-center md:hidden'>
-										<Popover.Button className='bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500'>
+										<Popover.Button className='bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-800'>
 											<span className='sr-only'>Open main menu</span>
 											<MenuIcon className='h-6 w-6' aria-hidden='true' />
 										</Popover.Button>
@@ -110,7 +110,7 @@ export default function Hero() {
 								<span className='inline-flex rounded-md shadow'>
 									<a
 										href='#'
-										className='inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50'></a>
+										className='inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-red-800 bg-white hover:bg-gray-50'></a>
 								</span>
 							</div>
 						</nav>
@@ -132,12 +132,12 @@ export default function Hero() {
 									<div>
 										<img
 											className='h-8 w-auto'
-											src='https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg'
-											alt=''
+											src='/blast825.svg'
+											alt='CCRG Logo'
 										/>
 									</div>
 									<div className='-mr-2'>
-										<Popover.Button className='bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500'>
+										<Popover.Button className='bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-800'>
 											<span className='sr-only'>Close menu</span>
 											<XIcon className='h-6 w-6' aria-hidden='true' />
 										</Popover.Button>
