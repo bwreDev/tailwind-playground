@@ -90,9 +90,9 @@ export default function Contact() {
 	};
 
 	return (
-		<div className='min-h-screen bg-white'>
+		<div className='min-h-screen bg-warm-gray-600'>
 			<Popover as='header' className='relative'>
-				<div className='bg-warm-gray-50'>
+				<div className='bg-warm-gray-600'>
 					<nav
 						className='relative max-w-7xl mx-auto flex items-center justify-between pt-6 px-6 xl:px-8'
 						aria-label='Global'>
@@ -101,8 +101,8 @@ export default function Contact() {
 								<a href='/'>
 									<span className='sr-only'>CCRG</span>
 									<img
-										className='h-10 w-auto sm:h-12'
-										src='./blast825.svg'
+										className='h-20 w-auto sm:h-24'
+										src='ccrg.svg'
 										alt='CCRG Logo'
 									/>
 								</a>
@@ -169,13 +169,13 @@ export default function Contact() {
 
 			<main className='overflow-hidden'>
 				{/* Header */}
-				<div className='bg-warm-gray-50'>
+				<div className='bg-warm-gray-600'>
 					<div className='py-24 lg:py-32'>
 						<div className='relative z-10 max-w-7xl mx-auto pl-4 pr-8 sm:px-6 lg:px-8'>
 							<h1 className='text-4xl font-extrabold tracking-tight text-warm-gray-900 sm:text-5xl lg:text-6xl'>
 								Get in touch
 							</h1>
-							<p className='mt-6 text-xl text-warm-gray-600 max-w-3xl'>
+							<p className='mt-6 text-xl text-warm-gray-100 max-w-3xl'>
 								We value feedback from our guests and look forward to speaking
 								directly with you!
 							</p>
@@ -185,10 +185,10 @@ export default function Contact() {
 
 				{/* Contact section */}
 				<section
-					className='relative bg-white'
+					className='relative bg-warm-gray-600'
 					aria-labelledby='contact-heading'>
 					<div
-						className='absolute w-full h-1/2 bg-warm-gray-50'
+						className='absolute w-full h-1/2 bg-warm-gray-600'
 						aria-hidden='true'
 					/>
 					{/* Decorative dot pattern */}
@@ -213,7 +213,7 @@ export default function Contact() {
 										y={0}
 										width={4}
 										height={4}
-										className='text-warm-gray-200'
+										className='text-warm-gray-50'
 										fill='currentColor'
 									/>
 								</pattern>
@@ -226,7 +226,7 @@ export default function Contact() {
 						</svg>
 					</div>
 					<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-						<div className='relative bg-white shadow-xl'>
+						<div className='relative bg-warm-gray-50 shadow-xl'>
 							<h2 id='contact-heading' className='sr-only'>
 								Contact us
 							</h2>
@@ -520,7 +520,7 @@ export default function Contact() {
 							className='text-3xl font-extrabold text-warm-gray-900'>
 							Our Stores
 						</h2>
-						<p className='mt-6 text-lg text-warm-gray-500 max-w-3xl'>
+						<p className='mt-6 text-lg text-warm-gray-900 max-w-3xl'>
 							If you would prefer to speak with one of our managers at a
 							specific location, feel free to call or come in for a chat. We
 							look forward to speaking with you!
@@ -531,16 +531,14 @@ export default function Contact() {
 									<h3 className='text-lg font-medium text-warm-gray-900'>
 										{office.store}
 									</h3>
-									<p className='mt-2 text-base text-warm-gray-500'>
+									<p className='mt-2 text-base text-warm-gray-900'>
 										{office.address.map(line => (
 											<span key={line} className='block'>
 												{line}
 											</span>
 										))}
 									</p>
-									<p className='mt-2 text-base text-warm-gray-500'>
-										{office.phone}
-									</p>
+									<p className='mt-2 text-base text-red-900'>{office.phone}</p>
 								</div>
 							))}
 						</div>
@@ -548,7 +546,7 @@ export default function Contact() {
 				</section>
 			</main>
 
-			<footer className='bg-warm-gray-900' aria-labelledby='footer-heading'>
+			<footer className='bg-warm-gray-200' aria-labelledby='footer-heading'>
 				<h2 id='footer-heading' className='sr-only'>
 					Footer
 				</h2>
@@ -558,18 +556,15 @@ export default function Contact() {
 							<a href='/'>
 								<span className='sr-only'>CCRG</span>
 								<img
-									className='h-10 w-auto sm:h-12'
-									src='./blast825.svg'
+									className='h-16 w-auto sm:h-20'
+									src='ccrg.svg'
 									alt='CCRG Logo'
 								/>
 							</a>
-							<p className='text-warm-gray-400 text-base'>
-								Life's too short, have a blast!
-							</p>
 						</div>
 
 						<div className='mt-12 border-t border-warm-gray-700 pt-8'>
-							<p className='text-base text-warm-gray-400 xl:text-center'>
+							<p className='text-base text-warm-gray-800 xl:text-center'>
 								&copy; 2021 Central Coast Restaurant Group. All rights reserved.
 							</p>
 						</div>
