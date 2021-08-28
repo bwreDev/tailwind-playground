@@ -83,8 +83,8 @@ export default function Hero() {
 									<a href='/'>
 										<span className='sr-only'>CCRG</span>
 										<img
-											className='h-10 w-auto sm:h-12'
-											src='/blast825.svg'
+											className='h-36 mt-5 w-auto sm:h-56'
+											src='ccrg.svg'
 											alt='CCRG Logo'
 										/>
 									</a>
