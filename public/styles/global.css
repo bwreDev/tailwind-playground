@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Birmingham';
+    src: url('/fonts/"Birmingham Script".otf') format('otf');
+  }
+}
